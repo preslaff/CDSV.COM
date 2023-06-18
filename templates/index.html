@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1>Welcome to CDSV</h1>
+<p>At CDSV, we provide you with top-notch data science solutions that can help streamline your business processes and improve decision-making. Our team of experts is always ready to assist you with your specific needs. Get in touch with us to learn more!</p>
+
+<div class="slider">
+    <div class="slide active-slide">
+        <img src="../static/img/DS_for_business_wordcloud.png" alt="Slide 1">
+    </div>
+    <div class="slide">
+        <img src="../static/img/ds_wordcloud.png" alt="Slide 2">
+    </div>
+    <div class="slide">
+        <img src="../static/img/MG-1M_wordcloud.png" alt="Slide 3">
+    </div>
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
+
+<script src="{{ url_for('static', filename='js/slider.js') }}"></script>
+{% endblock %}
